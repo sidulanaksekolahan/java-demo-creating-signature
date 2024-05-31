@@ -40,7 +40,7 @@ public class MainClassDemo {
 
         PrivateKey privateKey = getPrivateKeyFromString(keyString);
 
-        String dataToSign = "ddff6162722a419b84a02dbbf6961a1b|2024-05-14T13:10:26+07:00";
+        String dataToSign = "71b54f1701f246838efc2a11286aa810|2024-05-31T13:22:19+07:00";
         byte[] dataBytes = dataToSign.getBytes(StandardCharsets.UTF_8);
         // Sign the data with the private key
         byte[] digitalSignature = SHA256withRSA.signData(dataBytes, privateKey);
